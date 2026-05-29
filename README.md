@@ -327,10 +327,9 @@ Other issues included SQL query mismatches, Scanner input handling problems, par
 
 Future enhancements may include:
 
-* JavaFX or Swing GUI
+* graphical interface, 
 * Login authentication
 * Export to PDF/Excel
-* Cloud database hosting
 * Web-based version
 * Student report generation
 
