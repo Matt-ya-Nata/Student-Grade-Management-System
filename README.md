@@ -313,16 +313,13 @@ The system was tested manually to verify:
 
 # ⚠️ Challenges Encountered
 
-During development, several challenges were encountered including:
+During development of the Student Grade Management System, several challenges were encountered and resolved.
 
-* JDBC configuration issues
-* Database connection errors
-* SQL query mismatches
-* Scanner input handling problems
-* Updating partial student records
-* Recalculating averages after updates
+One major issue was establishing a stable connection between Java and MySQL using JDBC. The system initially produced compilation and connectivity errors due to incorrect driver setup and configuration. This was fixed by properly adding the MySQL JDBC Connector, importing required packages, and correcting database credentials (URL, username, password).
 
-These challenges were resolved through debugging, modular programming, and database redesign.
+Another challenge was ensuring automatic updates of student averages and pass/fail status when marks were modified. Initially, only marks were updated in the database, leading to inconsistent results. This was resolved by implementing a recalculation method that retrieves updated marks, recalculates the average, determines the new status, and updates the database accordingly.
+
+Other issues included SQL query mismatches, Scanner input handling problems, partial record updates, and inconsistencies between database fields and Java variables. These were addressed through debugging, testing, and improving the overall system design.
 
 ---
 
